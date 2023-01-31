@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+.Header__wrapper {
+}
+
+.content-banner {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.Header__navigation {
+  color: #fff;
+  &-icon {
+    display: flex;
+  }
+}

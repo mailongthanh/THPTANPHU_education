@@ -1,0 +1,15 @@
+@import "../../../scss/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Home__wrapper {
+  padding: 0 $padding;
+  height: 100%;
+  background-image: url("http://thptdian.edu.vn/upload/20802/bg-body-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
