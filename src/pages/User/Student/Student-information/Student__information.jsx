@@ -3,9 +3,10 @@ import { Container, Tab, Tabs, Row, Col } from "react-bootstrap";
 import Header from "../../../../components/Header/header";
 import Table_Information from "../../../../components/Table__Information/table__Information";
 
-import avatar__longthanh from "../../../../assets/Student_avatar/longthanh.png";
 const Student__information = (props) => {
   const Student__infor_key = [
+    "Họ và tên",
+    "Chức vụ",
     "Ngày sinh",
     "Giới tính",
     "Trường",
@@ -15,6 +16,22 @@ const Student__information = (props) => {
     "Tôn giáo",
   ];
   const Student__infor_value = {
+    img: "https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/328940773_6179945345373286_4247315516012240647_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=e2RU5KQbqfUAX-3mPyC&tn=26m5nvgWwJWtvPXc&_nc_ht=scontent.fsgn8-2.fna&oh=03_AdT_YM_xC8OayVJnBkrxd6BRDdBCRpw9oyz5D6VqI789vA&oe=6402853D",
+    name: "Mai Long Thành",
+    job: "Học sinh",
+    birth: "07/12/2001",
+    gender: "Nam",
+    School: "Trường THPT An Phú",
+    Class: "12a14",
+    Country: "Việt Nam",
+    Ethnic: "Kinh",
+    Religion: "Không có",
+  };
+
+  const Teacher__infor_value = {
+    img: "https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/328865215_2453322258158585_889183745753047234_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=HIDu50W_pbcAX-K2hiV&_nc_ht=scontent.fsgn8-2.fna&oh=03_AdSkUaohN0Z_GaZn0fw0TzB49r2HDsBRfDjzsAdwwq4WZA&oe=64029093",
+    name: "Trần Thanh Vũ",
+    job: "Giáo viên bộ môn Toán",
     birth: "07/12/2001",
     gender: "Nam",
     School: "Trường THPT An Phú",
@@ -58,6 +75,15 @@ const Student__information = (props) => {
     Housenumber: "93",
     Email: "longthanh71201@gmail.com",
     PhoneNumber: "0369941633",
+  };
+
+  const Teacher__contact_value = {
+    Province: "An Giang",
+    District: "Huyện An Phú",
+    Ward: "Thị trấn An Phú",
+    Housenumber: "93",
+    Email: "ttvu1508@gmail.com",
+    PhoneNumber: "0387879930",
   };
 
   const Student__schoolfee_key = [
@@ -105,7 +131,7 @@ const Student__information = (props) => {
                 <Row className="p-2">
                   <Col className="col-2 border border-primary p-2">
                     <img
-                      src={avatar__longthanh}
+                      src={Student__infor_value.img}
                       alt=""
                       width="100%"
                       height="100%"
@@ -115,7 +141,10 @@ const Student__information = (props) => {
                     className="col-9"
                     style={{ textAlign: "left", marginLeft: "20px" }}
                   >
-                    <h4 className="text-success">Mai Long Thành</h4>
+                    <h4 className="text-success">
+                      {Student__infor_value.name}
+                    </h4>
+                    {delete Student__infor_value.img}
                     <Table_Information
                       Student_key={Student__infor_key}
                       Student_value={Student__infor_value}

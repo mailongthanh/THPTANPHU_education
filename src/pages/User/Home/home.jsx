@@ -5,6 +5,7 @@ import Header from "../../../components/Header/header";
 import Slider from "../../../components/Slider/slider";
 import CardContainer from "../../../components/Card/card";
 import Footer from "../../../components/Footer/footer";
+import Login_form from "../../../components/Login_form/login_form";
 
 import { Container, Row, Col } from "react-bootstrap";
 import { SolutionOutlined } from "@ant-design/icons";
@@ -274,6 +275,21 @@ function Home(props) {
               </Row>
             </Container>
           </div>
+
+          <Row>
+            <Col className="col-4">
+              <Container>
+                <Login_form></Login_form>
+              </Container>
+            </Col>
+            <Col className="col-8 d-flex align-items-center">
+              <Container>
+                <h1 className="text-uppercase text-primary ">
+                  Trường thpt An Phú
+                </h1>
+              </Container>
+            </Col>
+          </Row>
 
           {/*Thanh tin mới */}
           <div id="Home__news-important">

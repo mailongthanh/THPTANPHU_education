@@ -68,7 +68,7 @@ function Header(props) {
                     <NavDropdown.Item>Tổ Anh</NavDropdown.Item>
                     <NavDropdown.Item>Tổ Sinh</NavDropdown.Item>
                   </NavDropdown>
-                  <NavDropdown title="Học sinh" id="basic-nav-dropdown">
+                  {/* <NavDropdown title="Học sinh" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/StudentInfoDetails">
                       Thông tin cá nhân
                     </NavDropdown.Item>
@@ -83,7 +83,20 @@ function Header(props) {
                     <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
                       Liên hệ
                     </NavDropdown.Item>
-                  </NavDropdown>
+                  </NavDropdown> */}
+                  {/* <NavDropdown title="Giáo viên" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="/StudentInfoDetails">
+                      Thông tin cá nhân
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/TeacherSchedule">
+                      Lịch giảng dạy
+                    </NavDropdown.Item>
+
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
+                      Liên hệ
+                    </NavDropdown.Item>
+                  </NavDropdown> */}
                 </Nav>
               </Navbar.Collapse>
             </Container>
