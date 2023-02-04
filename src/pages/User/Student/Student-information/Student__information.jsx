@@ -4,6 +4,8 @@ import Header from "../../../../components/Header/header";
 import Table_Information from "../../../../components/Table__Information/table__Information";
 
 const Student__information = (props) => {
+  const getEmail = localStorage.getItem("emailData");
+
   const Student__infor_key = [
     "Họ và tên",
     "Chức vụ",
@@ -131,7 +133,11 @@ const Student__information = (props) => {
                 <Row className="p-2">
                   <Col className="col-2 border border-primary p-2">
                     <img
-                      src={Student__infor_value.img}
+                      src={
+                        getEmail === "student@gmail.com"
+                          ? Student__infor_value.img
+                          : Teacher__infor_value.img
+                      }
                       alt=""
                       width="100%"
                       height="100%"
@@ -142,12 +148,20 @@ const Student__information = (props) => {
                     style={{ textAlign: "left", marginLeft: "20px" }}
                   >
                     <h4 className="text-success">
-                      {Student__infor_value.name}
+                      {getEmail === "student@gmail.com"
+                        ? Student__infor_value.name
+                        : Teacher__infor_value.name}
                     </h4>
-                    {delete Student__infor_value.img}
+                    {getEmail === "student@gmail.com"
+                      ? delete Student__infor_value.img
+                      : delete Teacher__infor_value.img}
                     <Table_Information
                       Student_key={Student__infor_key}
-                      Student_value={Student__infor_value}
+                      Student_value={
+                        getEmail === "student@gmail.com"
+                          ? Student__infor_value
+                          : Teacher__infor_value
+                      }
                     ></Table_Information>
                   </Col>
                 </Row>
@@ -175,7 +189,11 @@ const Student__information = (props) => {
                     </h5>
                     <Table_Information
                       Student_key={Student__contact_key}
-                      Student_value={Student__contact_value}
+                      Student_value={
+                        getEmail === "student@gmail.com"
+                          ? Student__contact_value
+                          : Teacher__contact_value
+                      }
                     ></Table_Information>
                   </Col>
                 </Row>
@@ -210,34 +228,36 @@ const Student__information = (props) => {
               </Container>
             </div>
           </Tab>
-          <Tab eventKey="Cost" title="THÔNG TIN HỌC PHÍ">
-            <div
-              id="Student__information-tuition"
-              style={{
-                margin: "0px 16px 16px 16px",
-                borderLeft: "1px solid #dee2e6",
-                borderRight: "1px solid #dee2e6",
-                borderBottom: "1px solid #dee2e6",
-              }}
-            >
-              <Container>
-                <Row className="p-2">
-                  <Col
-                    className="col-12"
-                    style={{ textAlign: "left", marginLeft: "20px" }}
-                  >
-                    <h5 className="mt-3 mb-3 text-uppercase text-success">
-                      Thông tin học phí, năm học 2023 - 2024
-                    </h5>
-                    <Table_Information
-                      Student_key={Student__schoolfee_key}
-                      Student_value={Student__schoolfee_value}
-                    ></Table_Information>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
-          </Tab>
+          {getEmail === "student@gmail.com" && (
+            <Tab eventKey="Cost" title="THÔNG TIN HỌC PHÍ">
+              <div
+                id="Student__information-tuition"
+                style={{
+                  margin: "0px 16px 16px 16px",
+                  borderLeft: "1px solid #dee2e6",
+                  borderRight: "1px solid #dee2e6",
+                  borderBottom: "1px solid #dee2e6",
+                }}
+              >
+                <Container>
+                  <Row className="p-2">
+                    <Col
+                      className="col-12"
+                      style={{ textAlign: "left", marginLeft: "20px" }}
+                    >
+                      <h5 className="mt-3 mb-3 text-uppercase text-success">
+                        Thông tin học phí, năm học 2023 - 2024
+                      </h5>
+                      <Table_Information
+                        Student_key={Student__schoolfee_key}
+                        Student_value={Student__schoolfee_value}
+                      ></Table_Information>
+                    </Col>
+                  </Row>
+                </Container>
+              </div>
+            </Tab>
+          )}
         </Tabs>
       </Container>
     </div>

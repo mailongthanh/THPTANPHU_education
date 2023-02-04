@@ -7,8 +7,22 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import "./header.scss";
 import banner_THPTAP from "../../assets/banner_THPTAnPhu.png";
 import { HomeOutlined } from "@ant-design/icons";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Header(props) {
+  const email = useRef();
+  const password = useRef();
+
+  const getEmail = localStorage.getItem("emailData");
+  const getPassword = localStorage.getItem("passwordData");
+
+  const logoutClick = () => {
+    localStorage.clear();
+    window.location.reload();
+    window.open("/#");
+  };
+
   return (
     <div className="Header">
       <div className="Header__wrapper">
@@ -68,35 +82,51 @@ function Header(props) {
                     <NavDropdown.Item>Tổ Anh</NavDropdown.Item>
                     <NavDropdown.Item>Tổ Sinh</NavDropdown.Item>
                   </NavDropdown>
-                  {/* <NavDropdown title="Học sinh" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/StudentInfoDetails">
-                      Thông tin cá nhân
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/StudentSchedule">
-                      Lịch TKB
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/StudentOutcome">
-                      Kết quả học tập
-                    </NavDropdown.Item>
+                  {getEmail === "student@gmail.com" &&
+                    getPassword === "12345" && (
+                      <NavDropdown title="Học sinh" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/StudentInfoDetails">
+                          Thông tin cá nhân
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/StudentSchedule">
+                          Lịch TKB
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/StudentOutcome">
+                          Kết quả học tập
+                        </NavDropdown.Item>
 
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
-                      Liên hệ
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
-                  {/* <NavDropdown title="Giáo viên" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/StudentInfoDetails">
-                      Thông tin cá nhân
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="/TeacherSchedule">
-                      Lịch giảng dạy
-                    </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
+                          Liên hệ
+                        </NavDropdown.Item>
+                        <NavDropdown.Item onClick={logoutClick}>
+                          <div className="logout_btn">
+                            <Link to="/#">Đăng xuất</Link>
+                          </div>
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    )}
+                  {getEmail === "teacher@gmail.com" &&
+                    getPassword === "56789" && (
+                      <NavDropdown title="Giáo viên" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/StudentInfoDetails">
+                          Thông tin cá nhân
+                        </NavDropdown.Item>
+                        <NavDropdown.Item href="/TeacherSchedule">
+                          Lịch giảng dạy
+                        </NavDropdown.Item>
 
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
-                      Liên hệ
-                    </NavDropdown.Item>
-                  </NavDropdown> */}
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="https://thptanphu-video-call.netlify.app/">
+                          Liên hệ
+                        </NavDropdown.Item>
+                        <NavDropdown.Item onClick={logoutClick}>
+                          <div className="logout_btn">
+                            <Link to="/#">Đăng xuất</Link>
+                          </div>
+                        </NavDropdown.Item>
+                      </NavDropdown>
+                    )}
                 </Nav>
               </Navbar.Collapse>
             </Container>
