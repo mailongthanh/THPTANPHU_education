@@ -1,0 +1,229 @@
+{
+  "student": [
+    {
+      "Student_infor_value": {
+        "img": "https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/328940773_6179945345373286_4247315516012240647_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=e2RU5KQbqfUAX-3mPyC&tn=26m5nvgWwJWtvPXc&_nc_ht=scontent.fsgn8-2.fna&oh=03_AdT_YM_xC8OayVJnBkrxd6BRDdBCRpw9oyz5D6VqI789vA&oe=6402853D",
+        "name": "Mai Long Thành",
+        "job": "Học sinh",
+        "birth": "07/12/2001",
+        "gender": "Nam",
+        "School": "Trường THPT An Phú",
+        "Class": "12a14",
+        "Country": "Việt Nam",
+        "Ethnic": "Kinh",
+        "Religion": "Không có"
+      },
+      "Student__insurance_value": {
+        "insuranceID": "SV4798924482389",
+        "createDate": "04/09/2018",
+        "startDate": "01/01/2022",
+        "endDate": "31/12/2022",
+        "city": "Hồ Chí Minh",
+        "Place": "Bệnh viện đa khoa khu vực Thủ Đức"
+      },
+      "Student__contact_value": {
+        "Province": "An Giang",
+        "District": "Huyện An Phú",
+        "Ward": "Thị trấn An Phú",
+        "Housenumber": "93",
+        "Email": "longthanh71201@gmail.com",
+        "PhoneNumber": "0369941633"
+      },
+      "Student__schoolfee_value": {
+        "Tuition": "1.500.000",
+        "MustPay": "1.500.000",
+        "Paid": "1.500.000",
+        "Own": "0",
+        "CloseTime": "5/2/2023",
+        "Status": "",
+        "Note": ""
+      },
+      "studentResult": [
+        {
+          "subject": "Toán",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Ngữ văn",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Vật lý",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Hóa học",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Lịch sử",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Địa lí",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Sinh học",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Tiếng Anh",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "GDCD",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Công nghệ",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "GDQP",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "GDTC",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        },
+        {
+          "subject": "Tin học",
+          "oral_score": [10, 8],
+          "fifteenminute_score": [10, 8, 9],
+          "onehour_score": [10, 8],
+          "midSem_score": 8,
+          "finalsem_score": 9
+        }
+      ],
+      "student__schedule_data": [
+        {
+          "Thứ hai": {
+            "morning": ["Anh", "Anh", "", "Lý"],
+            "afternoon": ["Anh", "Anh", "Hóa", "Hóa"],
+            "note": ""
+          }
+        },
+        {
+          "Thứ ba": {
+            "morning": ["Lý", "Lý", "Văn", "Văn"],
+            "afternoon": ["", "", "Toán", "Toán"],
+            "note": ""
+          }
+        },
+        {
+          "Thứ tư": {
+            "morning": ["Anh", "Anh", "Văn", "Văn"],
+            "afternoon": ["", "", "Hóa"],
+            "note": ""
+          }
+        },
+        {
+          "Thứ năm": {
+            "morning": ["Anh", "Anh", "Văn", "Văn"],
+            "afternoon": ["Toán", "Toán"],
+            "note": ""
+          }
+        },
+        {
+          "Thứ sáu": {
+            "morning": ["Toán", "Toán", "", ""],
+            "afternoon": [],
+            "note": ""
+          }
+        },
+        {
+          "Thứ bảy": {
+            "morning": ["Toán", "Toán", "", ""],
+            "afternoon": [],
+            "note": ""
+          }
+        }
+      ]
+    }
+  ],
+  "teacher": [
+    {
+      "Teacher__infor_value": {
+        "img": "https://scontent.fsgn8-2.fna.fbcdn.net/v/t1.15752-9/328865215_2453322258158585_889183745753047234_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=ae9488&_nc_ohc=HIDu50W_pbcAX-K2hiV&_nc_ht=scontent.fsgn8-2.fna&oh=03_AdSkUaohN0Z_GaZn0fw0TzB49r2HDsBRfDjzsAdwwq4WZA&oe=64029093",
+        "name": "Trần Thanh Vũ",
+        "job": "Giáo viên bộ môn Toán",
+        "birth": "07/12/2001",
+        "gender": "Nam",
+        "School": "Trường THPT An Phú",
+        "Class": "12a14",
+        "Country": "Việt Nam",
+        "Ethnic": "Kinh",
+        "Religion": "Không có"
+      },
+      "Teacher__contact_value": {
+        "Province": "An Giang",
+        "District": "Huyện An Phú",
+        "Ward": "Thị trấn An Phú",
+        "Housenumber": "93",
+        "Email": "ttvu1508@gmail.com",
+        "PhoneNumber": "0387879930"
+      },
+      "teacher__schedule_data": [
+        { "Tiết 1": ["10A2", "", "10A1", "", "", "10A3"] },
+        { "Tiết 2": ["10A2", "10A2", "10A1", "", "10A2", ""] },
+        { "Tiết 3": ["", "", "", "", "", ""] },
+        { "Tiết 4": ["", "", "10A3", "", "", "10A2"] },
+        { "Tiết 5": ["10A1", "", "10A3", "", "", ""] },
+        { "Tiết 6": ["", "", "10A4", "", "", ""] },
+        { "Tiết 7": ["", "", "10A4", "", "", "10A9"] },
+        { "Tiết 8": ["", "", "", "", "", ""] },
+        { "Tiết 9": ["10A9", "", "", "", "", ""] },
+        { "Tiết 10": ["10A9", "", "", "", "", ""] }
+      ]
+    }
+  ]
+}

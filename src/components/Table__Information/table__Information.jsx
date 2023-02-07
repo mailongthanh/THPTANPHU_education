@@ -3,6 +3,8 @@ import { Fragment } from "react";
 import { Table } from "react-bootstrap";
 
 const Table_Information = (props) => {
+  delete props.Student_value.img;
+
   const Student_key = props.Student_key;
   const Student_value = Object.values(props.Student_value);
   return (

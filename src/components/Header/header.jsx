@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, Component } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import axios from "axios";
 
 import "./header.scss";
 import banner_THPTAP from "../../assets/banner_THPTAnPhu.png";
@@ -10,12 +11,37 @@ import { HomeOutlined } from "@ant-design/icons";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 
+import Student__information from "../../pages/User/Student/Student-information/Student__information";
+
 function Header(props) {
   const email = useRef();
   const password = useRef();
 
+  const [student, setStudent] = useState();
+  const [teacher, setTeacher] = useState();
+
   const getEmail = localStorage.getItem("emailData");
   const getPassword = localStorage.getItem("passwordData");
+
+  // const fetchStudentData = () => {
+  //   fetch("http://localhost:3500/student")
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setStudent(data);
+  //     });
+  // };
+
+  // const fetchTeacherData = () => {
+  //   fetch("http://localhost:3500/teacher")
+  //     .then((response) => {
+  //       return response.json();
+  //     })
+  //     .then((data) => {
+  //       setTeacher(data);
+  //     });
+  // };
 
   const logoutClick = () => {
     localStorage.clear();
